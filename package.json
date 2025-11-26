@@ -1,0 +1,43 @@
+{
+  "name": "omnitap",
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy:base-sepolia": "hardhat run scripts/deploy-all.js --network baseSepolia",
+    "deploy:arbitrum-sepolia": "hardhat run scripts/deploy-all.js --network arbitrumSepolia",
+    "deploy:bsc-testnet": "hardhat run scripts/deploy-all.js --network bscTestnet",
+    "deploy:celo-alfajores": "hardhat run scripts/deploy-all.js --network celoAlfajores",
+    "verify:base-sepolia": "hardhat verify --network baseSepolia",
+    "verify:arbitrum-sepolia": "hardhat verify --network arbitrumSepolia",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "clean": "hardhat clean"
+  },
+  "dependencies": {
+    "@reown/appkit": "^1.8.14",
+    "@reown/appkit-adapter-wagmi": "^1.8.14",
+    "@tanstack/react-query": "^5.56.2",
+    "@wagmi/core": "^2.22.1",
+    "@wagmi/connectors": "^5.1.0",
+    "lucide-react": "^0.263.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "viem": "^2.21.0",
+    "wagmi": "^2.12.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.4.0",
+    "vite-plugin-node-polyfills": "^0.22.0"
+  }
+}
