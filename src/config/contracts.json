@@ -1,0 +1,139 @@
+{
+  "84532": {
+    "chainName": "Base Sepolia",
+    "core": {
+      "address": "0x0000000000000000000000000000000000000000",
+      "abi": [
+        {
+          "inputs": [{"internalType": "uint256", "name": "_initialFee", "type": "uint256"}],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "name": "count",
+          "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [],
+          "name": "fee",
+          "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [{"internalType": "address", "name": "referrer", "type": "address"}],
+          "name": "increment",
+          "outputs": [],
+          "stateMutability": "payable",
+          "type": "function"
+        },
+        {
+          "inputs": [{"internalType": "address", "name": "referrer", "type": "address"}],
+          "name": "decrement",
+          "outputs": [],
+          "stateMutability": "payable",
+          "type": "function"
+        },
+        {
+          "inputs": [{"internalType": "address", "name": "user", "type": "address"}],
+          "name": "getUserData",
+          "outputs": [
+            {
+              "components": [
+                {"internalType": "uint256", "name": "totalActions", "type": "uint256"},
+                {"internalType": "uint256", "name": "increments", "type": "uint256"},
+                {"internalType": "uint256", "name": "decrements", "type": "uint256"},
+                {"internalType": "uint256", "name": "lastActionDay", "type": "uint256"},
+                {"internalType": "uint256", "name": "currentStreak", "type": "uint256"},
+                {"internalType": "uint256", "name": "longestStreak", "type": "uint256"},
+                {"internalType": "uint256", "name": "lastActionTimestamp", "type": "uint256"}
+              ],
+              "internalType": "struct OmniTapCore.UserData",
+              "name": "",
+              "type": "tuple"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        }
+      ]
+    },
+    "extensions": {
+      "address": "0x0000000000000000000000000000000000000000",
+      "abi": [
+        {
+          "inputs": [{"internalType": "address", "name": "_core", "type": "address"}],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [{"internalType": "address", "name": "user", "type": "address"}],
+          "name": "updateLeaderboard",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [{"internalType": "uint256", "name": "n", "type": "uint256"}],
+          "name": "getTopN",
+          "outputs": [
+            {"internalType": "address[]", "name": "", "type": "address[]"},
+            {"internalType": "uint256[]", "name": "", "type": "uint256[]"}
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [{"internalType": "address", "name": "user", "type": "address"}],
+          "name": "getBadgeTier",
+          "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [{"internalType": "address", "name": "user", "type": "address"}],
+          "name": "checkAndUnlockAchievements",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        }
+      ]
+    }
+  },
+  "421614": {
+    "chainName": "Arbitrum Sepolia",
+    "core": {
+      "address": "0x0000000000000000000000000000000000000000",
+      "abi": []
+    },
+    "extensions": {
+      "address": "0x0000000000000000000000000000000000000000",
+      "abi": []
+    }
+  },
+  "97": {
+    "chainName": "BSC Testnet",
+    "core": {
+      "address": "0x0000000000000000000000000000000000000000",
+      "abi": []
+    },
+    "extensions": {
+      "address": "0x0000000000000000000000000000000000000000",
+      "abi": []
+    }
+  },
+  "44787": {
+    "chainName": "Celo Alfajores",
+    "core": {
+      "address": "0x0000000000000000000000000000000000000000",
+      "abi": []
+    },
+    "extensions": {
+      "address": "0x0000000000000000000000000000000000000000",
+      "abi": []
+    }
+  }
+}
